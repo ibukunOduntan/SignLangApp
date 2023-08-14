@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel = "stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <title>ASLearn | Sign Language</title>
+    <script src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+  </head>
+
+  <body id = "body">
+    <nav class = "nav">
+       <div id = 'title-nav'>
+        <a href= '/'><h1>ASLearn</h1></a>
+      </div>
+      <div class = "nav-buttons">
+        <button id="nav-info-btn1" class="nav-info-btn" onclick= "location.href ='/'" >HOME</button>
+        <button id="nav-info-btn2" class="nav-info-btn" onclick= "location.href ='/about'">ABOUT</button> 
+        <button id="nav-info-btn3" class="nav-info-btn" onclick= "location.href ='/text-to-asl'">TEXT TO ASL</button>
+
+
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center mt-5">
+      <img class = "levels-img" src="static/sign-removebg-preview.png" alt = 'image' height="150">
+      </div> 
+  
+    <div class = "choose-level">
+      <p>CHOOSE A LEVEL</p>
+    </div>
+    
+
+    <div class="levels">
+      <button class="level-btn" id = "level1-btn" onclick="location.href ='/level-one'" >Level 1</button>
+      <button class="level-btn" id = "level2-btn" onclick="location.href ='/level-two'">Level 2</button>
+    </div>
+
+    <div class = 'footer'>
+      <p> This app will be using your webcam and machine learning to analyze your handshapes. <br>Everything is processed locally, no webcam data will be sent or stored anywhere.</p>
+    </div>
+    
+  <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

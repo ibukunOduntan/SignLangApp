@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+	<title>Webcam Stream</title>
+	<!-- <style>
+		img {
+			width: 1000px; /* Set the width of the video element */
+			height: 800px; /* Set the height of the video element */
+			/* object-fit: cover; */
+		}
+	</style> -->
+</head>
+<body class = "pred-body">
+
+	<div id="loading-screen">
+		<p>Please wait while the camera is starting...</p>
+	</div>
+	<div class="vid-feed">
+		<img id="predict-feed-l1" src="" alt="Video feed">
+	</div>
+	
+	<div id ="l1">
+		<h1>Level 1</h1>
+	</div>
+	<div class = "instruction" id = "instruction-l1">
+		<p>Look at the hand sign images in the top right hand corner of the frame and copy the handshape with your hand. Use your right hand to sign</p>
+	</div>
+
+	<button class = "start-feed" id = "start-feed-l1"  onclick="toggleCamera_l1()"> Start Camera</button>
+	<div class = 'footer-lvl'>
+		<p> This app will be using your webcam and machine learning to analyze your handshapes. <br>Everything is processed locally, no webcam data will be sent or stored anywhere.</p>
+	  </div>
+
+ 	
+
+	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
