@@ -91,5 +91,40 @@ Faces are blurred for privacy
 - Develop a **mobile version** of the application for easier accessibility.
 - Integrate **speech-to-text** and **text-to-ASL animation** features.
 
+### INSTALLATION & USAGE
+#### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/ibukunOduntan/SignLangApp.git
+cd SignLangApp
+```
+
+#### **2️⃣ Create a Virtual Environment (Recommended)**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+#### **3️⃣ Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+#### **4️⃣ Download Model**
+Link for users to download:
+https://drive.google.com/file/d/1uf1nlVk13368ZBGeYaFcdwvu-KAN_1_I/view?usp=sharing
+
+Place it in the project folder.
+
+#### **5️⃣ Run the Application**
+```bash
+python app.py
+```
+The app should start locally, usually at `http://127.0.0.1:5000`.
+
+#### **6️⃣ Using the Application**
+- Open your browser and go to `http://127.0.0.1:5000`.
+- Allow webcam permissions for real-time ASL recognition.
+- Select **Easy Mode** or **Hard Mode** to start learning.
+
 ### CONCLUSION
 This project successfully developed an **AI-powered ASL learning application**, demonstrating the potential of machine learning in **education**. By providing an interactive, **real-time gesture recognition system**, the project contributes to **improving ASL accessibility and education**.
