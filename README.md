@@ -1,6 +1,6 @@
-# ASL SIGN LANGUAGE LEARNING APP
-## An Interactive Web Application for Learning American Sign Language Alphabet
-![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/asl.jpg)
+# ASLearn
+## An Interactive Web Application for Learning the American Sign Language Alphabet
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/asl.jpg)
 
 ### INTRODUCTION
 This project aims to bridge the communication gap for individuals with hearing disabilities by providing an interactive web application to facilitate learning American Sign Language (ASL). The system leverages a **Convolutional Neural Network (CNN)** to recognize hand gestures and translate them into ASL alphabets. The web application offers a **real-time sign language recognition system**, allowing users to practice signing letters and words interactively.
@@ -10,10 +10,10 @@ The application features:
 - **Two Learning Modes**:  
   - **Easy Mode**: Displays ASL hand signs for guidance.  
   - **Hard Mode**: Requires users to sign without reference images.
-- **Text-to-ASL Converter**: Converts typed text into ASL hand signs for learning.
   
-By integrating **computer vision** and **deep learning**, this project provides an engaging platform for both beginners and advanced learners to improve their ASL skills.
-![image](https://github.com/user-attachments/assets/placeholder.png)
+By integrating **computer vision** and **deep learning**, this project provides an engaging platform for beginners to improve their ASL skills.
+
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/home.jpg)
 
 ### PROBLEM STATEMENT
 - Many individuals who are deaf or hard of hearing rely on **ASL**, but not everyone in society understands it.
@@ -28,8 +28,10 @@ By integrating **computer vision** and **deep learning**, this project provides 
 
 ### METHODOLOGY
 - **STEP 1: Data Acquisition**  
-  - Collected **44,654 images** of ASL alphabets using OpenCV’s **HandDetector** module.
-  - Split data into **training (20772 images), validation (8903 images), and test (14979 images)** sets.  
+  - Collected **44,654 images** of ASL alphabets using a python script and OpenCV’s **HandDetector** module.
+  - Split data into **training (20772 images), validation (8903 images), and test (14979 images)** sets.
+
+  ![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/data.jpg)
 
 - **STEP 2: Data Preprocessing**  
   - Applied **image resizing, grayscale conversion, and normalization**.  
@@ -42,7 +44,13 @@ By integrating **computer vision** and **deep learning**, this project provides 
 
 - **STEP 4: Model Evaluation**  
   - Achieved **99.86% training accuracy, 99.94% validation accuracy, and 94.68% test accuracy**.
-  - Used **precision, recall, F1-score, and confusion matrix** for performance analysis.  
+  - Used **precision, recall, F1-score, and confusion matrix** for performance analysis.
+
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/graph.jpg)
+
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/conf.jpg)
+
+Confusion matrix of the model
 
 - **STEP 5: Web Application Development**  
   - Developed a web-based interface using **Flask, HTML, CSS, and JavaScript**.  
@@ -51,7 +59,11 @@ By integrating **computer vision** and **deep learning**, this project provides 
 - **STEP 6: Model Deployment**  
   - Deployed on a **Flask server** with real-time ASL gesture detection.  
 
-![image](https://github.com/user-attachments/assets/placeholder.png)
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/demol1.jpg)
+
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/images/demol2.jpg)
+
+Faces are blurred for privacy
 
 ### TECH STACK
 #### **Machine Learning & AI**
@@ -67,7 +79,6 @@ By integrating **computer vision** and **deep learning**, this project provides 
 - **Achieved 94.68% test accuracy**, making it **highly effective for real-world ASL recognition**.
 - Successfully **deployed on a web interface**, making ASL learning more accessible.
 - **Provides real-time feedback**, making the learning experience interactive and user-friendly.
-![image](https://github.com/user-attachments/assets/placeholder.png)
 
 ### KEY INSIGHTS
 - **High Accuracy**: The CNN model demonstrates strong performance in recognizing ASL gestures.
@@ -81,4 +92,4 @@ By integrating **computer vision** and **deep learning**, this project provides 
 - Integrate **speech-to-text** and **text-to-ASL animation** features.
 
 ### CONCLUSION
-This project successfully developed an **AI-powered ASL learning application**, demonstrating the potential of machine learning in **assistive technology**. By providing an interactive, **real-time gesture recognition system**, the project contributes to **improving ASL accessibility and education**.
+This project successfully developed an **AI-powered ASL learning application**, demonstrating the potential of machine learning in **education**. By providing an interactive, **real-time gesture recognition system**, the project contributes to **improving ASL accessibility and education**.
