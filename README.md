@@ -1,6 +1,6 @@
 # ASL SIGN LANGUAGE LEARNING APP
 ## An Interactive Web Application for Learning American Sign Language Alphabet
-![image](https://github.com/user-attachments/assets/placeholder.png)
+![image](https://github.com/ibukunOduntan/SignLangApp/blob/main/asl.jpg)
 
 ### INTRODUCTION
 This project aims to bridge the communication gap for individuals with hearing disabilities by providing an interactive web application to facilitate learning American Sign Language (ASL). The system leverages a **Convolutional Neural Network (CNN)** to recognize hand gestures and translate them into ASL alphabets. The web application offers a **real-time sign language recognition system**, allowing users to practice signing letters and words interactively.
