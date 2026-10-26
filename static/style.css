@@ -1,14 +1,14 @@
-
 #body{
     background-color: rgb(240, 238, 238);
-    height: 100vh;
-    
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .pred-body{
     background-color: #021b6b;
 }
-
 
 #body-btn{
     font-family: 'Lato', sans-serif;
@@ -19,7 +19,7 @@
     border-radius: 75px;    
     border: none;
     background-color: #05299E;
-    color:  rgb(240, 238, 238);;
+    color: rgb(240, 238, 238);
     font-size: 140%;
 }
 
@@ -28,7 +28,7 @@
 }
 
 #body-btn:hover {
-    background-color:  rgb(240, 238, 238);;
+    background-color: rgb(240, 238, 238);
     color: #05299E;
     border: 1px solid #05299E;
     transition: 0.5s;
@@ -40,8 +40,8 @@
 }
 
 .body-btn{
-    margin-top: 5%;
-
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 nav{
@@ -55,20 +55,20 @@ nav{
 
 #title-nav{
     text-align: left;
-    color:  rgb(240, 238, 238);
+    color: rgb(240, 238, 238);
     margin-left: 5%;
     font-family: 'Satisfy', cursive;
 }
 
 .nav #title-nav a{
     text-decoration: none;
-    color:  rgb(240, 238, 238);
+    color: rgb(240, 238, 238);
 }
+
 .nav-buttons{   
     display: flex;
     margin: auto;
     justify-content: space-between;
-
 }
 
 .nav-info-btn{
@@ -78,7 +78,7 @@ nav{
     padding: 0.6rem;
     font-size: 1.5rem;
     margin-right: 200px;
-    color:  rgb(240, 238, 238);; 
+    color: rgb(240, 238, 238);
     /* border: 0.2rem solid grey; */
     border: none;
     background-color: transparent;
@@ -87,14 +87,12 @@ nav{
 }
 
 .nav-info-btn:hover{
-
     border-bottom: solid palevioletred;
     border-width: 0.1rem;
     color: palevioletred;
     background-color: transparent;
     transition: 0.5s;
 }
-
 
 .info h1{
    text-align: center;
@@ -106,53 +104,40 @@ nav{
 .info h1.fade-in {
     opacity: 1;
     animation: fade-in 0.7s forwards;
-  }
+}
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fade-in1 {
     from {
-      opacity: 0;
-      transform: translateY(10px);
+        opacity: 0;
+        transform: translateY(10px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
-  
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
 .info h3{
     text-align: center;
     font-family: 'Mukta', sans-serif;
     /* margin-top: 5%; */
- }
+}
 
- .info h3.fade-in {
+.info h3.fade-in {
     opacity: 0;
     animation: fade-in 0.7s forwards;
     animation-delay: 0.3s;
-  }
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-
-  }
 }
 
 .d-flex img {
@@ -164,7 +149,7 @@ nav{
     opacity: 0;
     animation: fade-in 2s forwards;
     animation-delay: 0.4s;
-  }
+}
 
 .d-flex .levels-img {
     /* position: absolute; */
@@ -175,7 +160,7 @@ nav{
     opacity: 0;
     animation: fade-in 2s forwards;
     animation-delay: 0.1s;
-  }
+}
 
 .vid-feed{
     background-color: antiquewhite;
@@ -184,8 +169,7 @@ nav{
     opacity: 0;
     animation: fade-side 1.5s forwards ease-in-out; 
     animation-delay: 0.1s;
- }
-
+}
 
 #vid-feed-l2{
     background-color: antiquewhite;
@@ -194,29 +178,27 @@ nav{
     opacity: 0;
     animation: fade-side 1.5s forwards ease-in-out; 
     animation-delay: 0.1s;
- }
+}
+
 @keyframes fade-side {
-        from {
-          opacity: 0;
-          transform: translateX(-1000px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-      
-        }
-      }
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 #predict-feed-l1{
     width: 55vw; /* Set the width of the video element */
     height: 100vh;
-
 }
 
 #predict-feed-l2{
     width: 55vw; /* Set the width of the video element */
     height: 100vh;
-
 }
 
 .info h1, h3{
@@ -232,7 +214,6 @@ nav{
     opacity: 0;
     animation: fade-in1 0.7s forwards;
     animation-delay: 0.5s;
-    
 }
 
 .levels{
@@ -246,10 +227,9 @@ nav{
     padding: 20px 90px;
     border: 3px solid #05299E;
     border-radius: 40px;
-    background-color:  rgb(240, 238, 238);;
+    background-color: rgb(240, 238, 238);
     /* color: #05299E; */
     font-size: 140%;
-
 }
 
 #level1-btn{
@@ -284,7 +264,6 @@ nav{
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .content {
@@ -294,25 +273,25 @@ nav{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
 
- .content a {
+.content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     align-items: center;
-  }
+}
 
 .content a:hover {
-    background-color:  rgb(184, 179, 179);
+    background-color: rgb(184, 179, 179);
 }
 
 .dropdown:hover .content {
     display: block;
-  }  
+}
 
-  .container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,6 +299,7 @@ nav{
     height: 100%;
     width: 100vw;
 }
+
 .converter{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -373,7 +353,7 @@ nav{
 
 .eng-input:focus {
     outline: none;
-  }
+}
 
 .asl-input{
     height: 51%;
@@ -389,9 +369,7 @@ nav{
     color: var(--font-color);
     background-color: white;
     box-shadow: 1px 1px 20px -1px grey;  
-    
 }
-
 
 .about-div{
     background-color: #021b6b;
@@ -400,29 +378,31 @@ nav{
     font-size: 50px;
     color: white;
     font-family: 'Abel', sans-serif;
-
 }
 
 .about-div p{
     padding-top: 5vh;
 }
+
 .about-text{
     width: 50vw;
     margin: auto;
 }
+
 .about-text p{
     font-size: 25px;
     text-align: justify;
     margin-top: 10vh;
     color: #021b6b;
-
 }
+
 .footer{
     font-family: 'Mukta', sans-serif;
     text-align: center;
-    padding-top: 8%;
     color: grey;
     font-size: 17px;
+    margin-top: auto;
+    padding: 2rem 1rem;
 }
 
 .footer-lvl{
@@ -432,7 +412,6 @@ nav{
     color: grey;
     font-size: 17px;
     padding-left: 1000px;
-
 }
 
 .instruction{
@@ -444,16 +423,14 @@ nav{
     opacity: 0;
     animation: fade-in1 1s forwards;
     animation-delay: 0.5s;
-    
-  
 }
+
 #instruction-l1 p{
     font-size: 25px;  
     text-align: center;
     padding: 3%;
     color: #021b6b;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 #instruction-l2 p{
@@ -462,9 +439,7 @@ nav{
     padding: 6%;
     color: #021b6b;
     font-family: 'Roboto', sans-serif;
-    
 }
-
 
 #l1{
     font-size: 10px;
@@ -488,7 +463,6 @@ nav{
     background-color:#021b6b;
     color: rgb(240, 238, 238);
     font-size: 140%;
-
 }
 
 .start-feed:hover {
@@ -501,10 +475,9 @@ nav{
     transform: translateY(6px);
 }
 
-
 .start-feed:visited {
     display: none;
-  }
+}
 
 #loading-screen {
     width: 55vw; 
@@ -513,12 +486,12 @@ nav{
     display: none;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 #loading-screen p {
     color: white;
     font-size: 24px;
-  }
+}
 
 /* #predict-feed-l1{
     display: none;
